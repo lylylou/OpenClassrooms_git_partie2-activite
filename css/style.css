@@ -1,0 +1,207 @@
+/*********** declaration de polices *****************/
+
+@font-face{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+/****************************************************/
+
+body{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+p{
+    align-items: center;
+}
+
+/****    header => titre du magazine   ***************/
+
+    header{
+        background: url('image/code.jpg') no-repeat;
+        /*border: 15px solid #2c07fa;*/
+        margin: 80px 0 20px 0;
+        padding: 0px;
+        max-width: 1600px;
+        width: 100%;
+}
+        h1{
+            color: #ff0031;
+            font-family:'Dayrom',monospace, cursive;
+            font-size: 10em;
+            font-weight: bold;
+            left: 0.5em;
+            margin: 0;
+            padding: 0;
+            width: 80%;
+            position: relative;
+            text-transform: uppercase;
+            text-shadow: 7px 5px #848484;
+
+}
+        h2{
+            color:#00fff5;
+            font-family: 'Dayrom', cursive;
+            font-size: 5em;
+            margin: 0;
+            padding: 0 20px 0 0;
+            text-align: right;
+            text-shadow: 3px 3px #000000;
+}
+        h3{
+            color: #fff;
+            font-family:  cursive;
+            font-size: 3.5em;
+            margin: 0 0 1em;
+            text-shadow: 7px 5px #000000;
+
+}
+
+
+/****   content => contenu de la couverture  *********/
+    content {
+        border: 10px solid #aeb6f2;
+        display: flex;
+        flex:1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height:1600px;
+        max-width: 1600px;
+        width: 80%;
+}
+
+/****   section => englobe les annonces  *************/
+
+    section{
+        align-items: center;
+        background: url('image/code3.jpg') no-repeat ;
+       /* border: 15px solid #ea53d2;*/
+        display: flex;
+        flex:1;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        min-height:1700px;
+        max-width: 1600px;
+        width: 100%;
+}
+        .d1{
+            align-items:center;
+            display: flex;
+            background: url('image/bande.png') repeat-y center;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 1550px;
+            width:20%;
+}
+            .d1 li{
+                border: 10px solid #00fff5;
+                box-shadow: 1px 1px #000;
+                text-align: center;
+                height: 175px;
+                list-style-type: none;
+                margin: 15px;
+                overflow: hidden;
+                width: 175px;
+}
+                .d1 li img {
+                    height: 175px;
+                    width: 175px;
+}
+        .d2{
+            align-items: center;
+            display:flex;
+
+            flex-flow: row wrap;
+            justify-content:space-between;
+            text-align: center;
+            height: 1450px;
+            width:75%;
+}
+            article{
+                height: 70%;
+}
+            .d2 p{
+                color: #fff;
+                text-shadow: 3px 3px #000;
+                font-family: cursive;
+                font-weight: bold;
+                font-size: 3em;
+                margin: 20px;
+                width:100%;
+}
+            .d2 .p1{
+                color:#fff;
+                text-shadow: 2px 2px #000;
+                width: 30%;
+}
+            .d2 .p2{
+                color:#fff;
+                text-shadow: 2px 2px #000;
+                width: 45%;
+}
+            .d2 strong {
+                font-family: 'BallparkWeiner';
+                font-size: 2em;
+}
+            .d2 img{
+                border:1px solid grey;
+                box-shadow: 5px 5px grey;
+                height: 150px;
+                width:  150px;
+
+}
+            #zozor_mimi{
+                border: 10px solid #00fff5;
+                box-shadow: 3px 3px #000;
+                height:700px;
+                width: 800px;
+
+}
+
+/****  footer  ***************************************/
+
+footer{
+    display:flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    max-width: 1600px;
+    width: 100%;
+}
+    footer p{
+        flex: 1;
+        width:80%;
+}
+    #cb{
+        width: 20%;
+}
+    em{
+        color: #000;
+        font-family: cursive;
+        font-size: 2em;
+}
+
